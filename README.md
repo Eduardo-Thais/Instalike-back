@@ -6,9 +6,14 @@ Get todos os post
 ```
 [GET](https://instalike-back-539501509264.southamerica-east1.run.app/posts)
 ```
-Envia Descrição, alt
+Envia Descrição, alt, imgUrl
 ```
 [POST](https://instalike-back-539501509264.southamerica-east1.run.app/upload)
+{
+    "descricao": "teste",
+    "alt": "alt teste",
+    "imgUrl": "https://placecats.com/neo_2/300/200"
+}
 ```
 Post de uma imagem
 ```
@@ -16,5 +21,8 @@ Post de uma imagem
 ```
 Atualiza imagem para criar uma descrição da imagem pela api do Gemini
 ```
+{
+    "alt": "alt teste"    
+}
 [PUT](https://instalike-back-539501509264.southamerica-east1.run.app/upload/[ID])
 ```
